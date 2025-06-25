@@ -1,0 +1,23 @@
+<!DOCTYP html>
+<html>
+ <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    
+  <script>
+	    $(document).ready(function(){
+	     $("button").click(function(){
+		   $("#d1").fadeOut(10000);
+		   $("#d2").fadeOut(7000);
+		   $("#d3").fadeOut(4000);
+		 });
+	   });
+   </script>
+
+ </head>
+ <body>
+    <div id="d1" style="height:50px;width:50px;background-color:red;"></div><p>
+	<div id="d2" style="height:50px;width:50px;background-color:blue;"></div><p>
+	<div id="d3" style="height:50px;width:50px;background-color:green;"></div><p>
+    <button>fadeIn Demo</button>
+ </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYP html>
+<html>
+ <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    
+  <script>
+	    $(document).ready(function(){
+	     $("#i").on("keyup",function(){
+	        var value=$(this).val().toLowerCase();
+			$("#student tr").filter(function(){
+		 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		 
+		 });
+		 });
+	   });
+   </script>
+
+ </head>
+ <body>
+ <input id="i" type="text" size="30" placeholder="serch anything from this page...">
+ <br><br>
+ <table border="1">
+ <thead>
+    <tr bgcolor="lavender">
+	 <th>ID</th>
+	 <th>Name</th>
+	 <th>Email</th>
+	</tr>
+ </thead>
+ <tbody id="student" bgcolor="mistyrose">
+ <tr>
+    <td>1001</td>
+	<td>mary</td>
+    <td>mary@ict.edu.om</td>
+ </tr>
+ <tr>
+    <td>1002</td>
+	<td>khalsa</td>
+    <td>khalsa@ict.edu.om</td>
+ </tr>
+ <tr>
+    <td>1003</td>
+	<td>talib</td>
+    <td>talib@ict.edu.om</td>
+ </tr>
+ <tr>
+    <td>1004</td>
+	<td>mizna</td>
+    <td>mizna@ict.edu.om</td>
+ </tr>
+ <tr>
+    <td>1005</td>
+	<td>noor</td>
+    <td>noor@ict.edu.om</td>
+ </tr>
+ </tbody>
+ </body>
+</html>

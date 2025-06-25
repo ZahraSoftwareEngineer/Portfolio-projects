@@ -1,0 +1,41 @@
+<!DOCTYP html>
+<html>
+ <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    
+  <script>
+	    $(document).ready(function(){
+	     $("#i").on("keyup",function(){
+	        var value=$(this).val().toLowerCase();
+			$("#d").filter(function(){
+		 $(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+		 
+		 
+		 });
+	   });
+   </script>
+
+ </head>
+ <body>
+ <input id="i" type="text" size="30" placeholder="serch anything from this page...">
+ 
+ <div id="d"> 
+    <h3>Sabah al khair</h3>
+	<p>I am mizna</p>
+	<div>I am an IT Lecturer</div>
+	<button>Hello</button>
+	<button>Hai</button>
+	<ol>
+	<li>Java
+	<li>Python
+	<li>Flutter
+	</ol>
+	<ul>
+	<li>UTAS ibra
+	<li>UTAS Rustaq
+	<li>UTAS Sur
+	</ul>
+	<p>Maa Salaama</p>
+ </div>
+ </body>
+</html>
